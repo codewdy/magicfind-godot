@@ -1,6 +1,6 @@
-local loader = {}
+local prefab = {}
 
-function loader:load(filename)
+function prefab:load(filename)
   local file = io.open(filename:to_utf8(), "r")
   local jsonstr = file:read()
   print(jsonstr)
@@ -8,4 +8,4 @@ function loader:load(filename)
   file:close()
 end
 
-return loader
+return prefab
